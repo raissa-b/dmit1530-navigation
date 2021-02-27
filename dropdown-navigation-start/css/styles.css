@@ -1,0 +1,93 @@
+html {
+	font-size: 62.5%;
+}
+
+/* mobile first css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: #192f5e;
+}
+
+header {
+	background-color: #fff;
+	padding: 2%;
+}
+
+header nav {
+	width: 480px; /*   Temporary sizing to be removed */
+	margin: 0 auto; /* once complete */
+}
+header a {
+    color: #3f3f3f;
+    text-decoration: none;
+    display: block; 
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a:hover,
+.menu a:active {
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+.menu li {
+    line-height: 4rem;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+}
+
+.menu li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s ease;
+    background-color: #fff;
+    width: 107px;
+    border-radius: 4px;
+}
+
+.menu li:hover > ul, 
+.menu li > ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+/* ************************* section ****************** */
+section {
+    padding: 3.125rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section p {
+    color: #d5e294;
+    border-bottom: 2px solid #d5e294;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.777rem;
+}
+
+section h2,
+footer {
+    color: #fff;
+    font-size: 3.157rem;
+    margin-bottom: 2rem;
+}
+
+/*--- Footer --- */
+footer {
+	text-align: center;
+	position: -webkit-sticky;
+	position: sticky;
+}
